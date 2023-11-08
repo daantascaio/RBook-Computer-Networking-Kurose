@@ -1,7 +1,7 @@
 from pathlib import Path
 
-FILE_DEST = Path(
-    'C:\\Users\\caio.dantas\\Desktop\\RBook-Computer-Networking-Kurose\\fixation_exercises\\ch_01')
+FILE_DEST = Path(__file__) # not complete
+    
 
 
 for i in range(20, 29):
