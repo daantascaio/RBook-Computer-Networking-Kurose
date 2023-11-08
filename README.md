@@ -4,7 +4,7 @@ Este repositório é dedicado ao estudo do livro "Computer Networking: A Top-Dow
 
 ## Sobre o Projeto
 
-Este projeto é uma coleção de exercícios resolvidos, códigos e projetos relacionados ao livro "Computer Networking: A Top-Down Approach". O objetivo principal deste projeto é estudar e entender os conceitos de redes de computadores.
+Este projeto é uma coleção de exercícios resolvidos (ou não resolvidos ;) ), códigos e projetos relacionados ao livro "Computer Networking: A Top-Down Approach". O objetivo principal deste projeto é estudar e entender os conceitos de redes de computadores.
 
 ## Estrutura do Repositório
 
