@@ -1,6 +1,6 @@
 from pathlib import Path
 
-FILE_DEST = Path(__file__) # not complete 
+FILE_DEST = Path(__file__).parent
 
 
 for i in range(1, 35):
