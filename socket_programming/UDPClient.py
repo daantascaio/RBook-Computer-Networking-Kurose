@@ -6,7 +6,7 @@ serverName = 'hostname' # o valor dessa variável ou é o IP (168.135.12.50) ou 
 serverPort = 12000  # define o valor da var int
 
 clientSocket = socket(AF_INET, SOCK_DGRAM) # está linha cria o socket do cliente: AF_INET significa que é um endereço
-                                           # IPv4, SOCK_DGRAM significa que é um socket UDP
+                                           # IPv4, SOCK_DGRAM significa que é um socket UDP 
 
 message = input('Input lowercase sentence:') # input é um função que pede ao usuário que digite algo
 
