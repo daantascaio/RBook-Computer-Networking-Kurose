@@ -1,0 +1,46 @@
+# Ambiente virtual
+venv/
+env/
+
+# Cache do Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Logs
+*.log
+
+# Arquivos de configuração pessoais
+*.env
+*.ini
+*.cfg
+*.local
+*.DS_Store
+*.swp
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Arquivos de testes
+.coverage
+.tox/
+.nox/
+.cache/
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Arquivos do sistema (Windows, macOS)
+Thumbs.db
+.DS_Store
+ehthumbs.db
+Icon?
+Desktop.ini
