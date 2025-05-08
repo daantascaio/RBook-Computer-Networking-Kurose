@@ -1,21 +1,27 @@
-from socket import * # é um modulo de base para todas as comunicações de rede em python
+from socket import *  # importa o módulo base para comunicação de rede em Python
 
-serverName = 'hostname' # o valor dessa variável ou é o IP (168.135.12.50) ou é um hostname do servidor (cis.poly.edu) 
-                        #usando o hostname, será realizada uma consulta DNS para obter o endereço IP
+# pode ser um IP (ex: 168.135.12.50) ou um nome de domínio (ex: cis.poly.edu)
+serverName = 'hostname'
+# se for um hostname, o sistema faz uma busca DNS para descobrir o IP
 
-serverPort = 12000  # define o valor da var int
+serverPort = 12000  # define a porta que será usada para enviar a mensagem
 
-clientSocket = socket(AF_INET, SOCK_DGRAM) # está linha cria o socket do cliente: AF_INET significa que é um endereço
-                                           # IPv4, SOCK_DGRAM significa que é um socket UDP 
+clientSocket = socket(AF_INET, SOCK_DGRAM)  # cria o socket do cliente
+# AF_INET = usa IPv4
+# SOCK_DGRAM = tipo de socket UDP
 
-message = input('Input lowercase sentence:') # input é um função que pede ao usuário que digite algo
+# pede pro usuário digitar uma frase em letras minúsculas
+message = input('Input lowercase sentence: ')
 
-clientSocket.sendto(message.encode(),(serverName, serverPort)) # sento() = usado para enviar dados via UDP
-                                                               # encode() = transforma string em bytes
+# envia a mensagem codificada (em bytes) para o servidor
+clientSocket.sendto(message.encode(), (serverName, serverPort))
+# sendto() é usado com sockets UDP
 
-modifiedMessage, serverAddress = clientSocket.recvfrom(2048) # a mensagem é armazenada na var modifiedMessage
-                                                             # o IP e a porta é armazenado no serverAddress
+modifiedMessage, serverAddress = clientSocket.recvfrom(
+    2048)  # recebe a resposta do servidor (até 2048 bytes)
+# guarda a mensagem modificada e o endereço do servidor
 
-print(modifiedMessage.decode()) # printa na tela a mensagem
+# exibe a resposta do servidor já decodificada (voltando de bytes pra string)
+print(modifiedMessage.decode())
 
-clientSocket.close() # fecha a comunicação
+clientSocket.close()  # encerra a conexão do socket
