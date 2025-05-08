@@ -1,7 +1,7 @@
 from socket import *  # importa o módulo base para comunicação de rede em Python
 
 # pode ser um IP (ex: 168.135.12.50) ou um nome de domínio (ex: cis.poly.edu)
-serverName = 'hostname'
+serverName = 'localhost'
 # se for um hostname, o sistema faz uma busca DNS para descobrir o IP
 
 serverPort = 12000  # define a porta que será usada para enviar a mensagem
