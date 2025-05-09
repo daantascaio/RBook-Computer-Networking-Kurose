@@ -2,7 +2,7 @@ from socket import *  # Importa todas as classes e funções do módulo 'socket'
 
 
 # Nome ou endereço IP do servidor ao qual o cliente irá se conectar
-serverName = 'servername'
+serverName = 'localhost'
 serverPort = 12000  # Porta na qual o servidor está escutando conexões
 
 clientSocket = socket(AF_INET, SOCK_STREAM)  # Cria um socket TCP usando IPv4
